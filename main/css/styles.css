@@ -1,0 +1,446 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+     width: 0;
+}
+
+a:not(.scrollToTop) {
+     text-decoration: none;
+     color: #fff;
+}
+
+body {
+     background-color: #000;
+}
+
+.page-wrapper {
+     max-width: 1536px;
+     margin: 0 auto;
+}
+
+.global_padding {
+     padding: 80px 64px;
+}
+
+.header {
+     padding: 0 64px 120px 64px;
+     background-color: #000;
+}
+
+.nav_center {
+     display: flex;
+     gap: 32px;
+}
+
+.ellipse {
+     position: absolute;
+     top: -45%;
+     width: 1455px;
+     height: 757.028px;
+     border-radius: 1600px;
+     background: #0F1015;
+     filter: blur(60px);
+     z-index: 1;
+}
+
+.nav {
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     height: 68px;
+     padding: 24px 64px;
+     align-items: center;
+     gap: 32px;
+     border: 1px solid #5C5757;
+     border-radius: 32px;
+     background: #101116;
+     color: #fff;
+     margin: 38px 0 52px 0;
+     z-index: 2;
+}
+
+.header div a {
+     font-family: "Roboto Flex";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 19px;
+     letter-spacing: -0.32px;
+}
+
+#rectangle_component {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 777.5px;
+     height: 1323.262px;
+     transform: rotate(90deg);
+     z-index: -1;
+}
+
+.header_component {
+     position: relative;
+     border-radius: 32px;
+     height: 650px;
+     background: linear-gradient(180deg, #363354 52.45%, #FF9898 100%), linear-gradient(180deg, #CD10FF 0%, #0ABBC7 100%), linear-gradient(180deg, #0F1015 16.93%, #527AFB 99.7%);
+     display: flex;
+     align-items: center;
+     padding: 0 80px;
+}
+
+#header_image_wrap {
+     position: relative;
+     z-index: 1;
+     left: 80px;
+}
+
+#header_h1 {
+     position: relative;
+     color: #FFF;
+     font-family: "Jaldi";
+     font-size: 64px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 120%;
+     z-index: 1;
+     margin-bottom: 24px;
+     width: 100%;
+}
+
+#header_text {
+     color: #FFF;
+     font-family: "Jaldi";
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 150%;
+     z-index: 1;
+     margin-bottom: 24px;
+     width: 100%;
+}
+
+.header_buttons {
+     display: flex;
+     justify-content: start;
+     gap: 25px;
+}
+
+.main {
+     width: 100%;
+     background-color: #1B1B1D;
+}
+
+.hero_section {
+     display: flex;
+     width: 1280px;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 80px;
+}
+
+.work_column {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 32px;
+}
+
+#work_h1 {
+     color: #FFF;
+     font-family: "Jaldi";
+     font-size: 64px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 120%;
+}
+
+#work_btn {
+     padding: 20px 40px;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+     border: none;
+     border-radius: 32px;
+     background: #FFF;
+     color: #000;
+     font-family: "Inter";
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 140%;
+     text-transform: uppercase;
+}
+
+.work_images {
+     display: flex;
+     justify-content: space-between;
+}
+
+.work_img_btns {
+     display: flex;
+     gap: 16px;
+     margin: 16px 0;
+}
+
+.work_img_btns button {
+     display: flex;
+     width: 100px;
+     padding: 8px 16px;
+     justify-content: center;
+     align-items: center;
+     border-radius: 32px;
+     border: 1px solid #FFF;
+     color: #FFF;
+     text-align: center;
+     font-family: "Jaldi";
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 120%;
+     text-transform: uppercase;
+     background: none;
+}
+
+#work_text {
+     color: #FFF;
+     font-family: "Jaldi";
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 120%;
+     text-transform: uppercase;
+}
+
+#work3_img {
+     border-radius: 16px;
+     padding-top: 32px;
+     width: 100%;
+}
+
+.section2 {
+     padding: 80px 64px;
+     background-color: #0F1114;
+     display: flex;
+}
+
+.section2_content {
+     display: flex;
+     align-items: center;
+     padding: 120px 32px;
+     gap: 80px;
+     background-color: #000;
+     margin-top: 80px;
+     border-radius: 32px;
+     height: auto;
+     width: 100%;
+}
+
+.section2_content div {
+     flex: 1;
+}
+
+#section2_h1 {
+     color: #FFF;
+     font-family: "Jaldi";
+     font-size: 56px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 120%;
+}
+
+#section2_text {
+     color: #FFF;
+     text-overflow: ellipsis;
+     font-family: "Inter";
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 150%;
+     margin: 24px 0;
+}
+
+.section2_end {
+     display: flex;
+     gap: 16px;
+     align-items: center;
+}
+
+.section2_end_text {
+     color: #FFF;
+     font-family: "Inter";
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 140%;
+}
+
+#get_started {
+     color: #FFF;
+     font-family: "Jaldi";
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 140%;
+     padding: 20px 40px;
+     background: none;
+     border-radius: 32px;
+     border: 1px solid #FFF;
+}
+
+.section2_second h2 {
+     color: #FFF;
+     font-family: "Jaldi";
+     font-size: 48px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 115%;
+     letter-spacing: -1.92px;
+     padding: 16px 0;
+}
+
+.section3 {
+     border-radius: 32px;
+     background: linear-gradient(180deg, #F99596 0%, #84545B 24.53%, #1A1A27 73.59%), linear-gradient(180deg, #4769D7 0%, #010101 70.06%), #FFF;
+     z-index: -3;
+     background-size: cover;
+     background-position: center;
+}
+
+.rectangle_bg {
+     background-image: url('/pictures/Rectangle.png');
+}
+
+.section3_content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 120px;
+}
+
+.section3_content div {
+     flex: 1;
+}
+
+#section3_h2 {
+     color: #FFF;
+     font-family: "Jaldi";
+     font-size: 64px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 120%;
+}
+
+#section3_text {
+     color: #FFF;
+     font-family: "Inter";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 150%;
+     padding: 20px 0;
+     width: 500px;
+}
+
+#section3_btn {
+     display: flex;
+     padding: 20px 40px;
+     justify-content: center;
+     align-items: center;
+     border-radius: 32px;
+     background: #FFF;
+}
+
+.faq_section p {
+     position: relative;
+     color: #FFF;
+     font-family: "Jaldi";
+     font-size: 48px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 115%;
+     letter-spacing: -1.92px;
+     padding: 16px 0;
+}
+
+.faq_section p::after {
+     position: absolute;
+     content: "→";
+     right: 0;
+}
+
+
+.footer-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.footer {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+
+.footer div {
+     flex: 1;
+}
+
+
+
+.scrollToTop {
+     position: absolute;
+     top: 64px;
+     right: 44px;
+}
+
+#scrollToTopImg {
+     position: relative;
+}
+
+#scrollToTopArrow {
+     position: absolute;
+     top: 34%;
+     right: 39%;
+     font-family: "Inter";
+}
+
+#qr_title {
+     color: #FFF;
+     text-align: center;
+     font-family: "Jaldi";
+     font-size: 44px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 100%;
+     letter-spacing: -1.98px;
+}
+
+.qr_rectangle {
+     display: flex;
+     padding: 48px 0px;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     gap: 48px;
+     border-radius: 56px;
+     background: linear-gradient(0deg, #E8E7E7 0%, #E8E7E7 100%), linear-gradient(180deg, #F6F9FF 0%, #A1B6FE 100%);
+}
+
+#qr_text {
+     color: #383B43;
+     text-align: center;
+     font-family: "Jaldi";
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: -0.5px;
+}
