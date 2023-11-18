@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- CSS files -->
@@ -11,24 +12,26 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jaldi:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap"
           rel="stylesheet">
+     <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
      <title>Portfolio.AT</title>
 </head>
 
 <body class="page-wrapper">
      <header class="header">
-          <nav class="nav">
+          <nav class="nav" data-aos="fade-down">
                <div>
-                    <a href="#">Portfolio</a>
+                    <a href="#" target="_blank">Portfolio</a>
                </div>
                <div class="nav_center">
-                    <a href="#">About</a>
-                    <a href="#">Work</a>
-                    <a href="#">Career</a>
+                    <a href="#" target="_blank">About</a>
+                    <a href="#" target="_blank">Work</a>
+                    <a href="#" target="_blank">Career</a>
                </div>
                <div>
-                    <a href="#" style="display: flex;">
-                         <p>→</p>
-                         <p style="margin-left: 10px;">Contact</p>
+                    <a href="#" style="display: flex;" style="margin-left: 10px;">
+                         <p>→ Contact</p>
                     </a>
                </div>
           </nav>
@@ -37,34 +40,57 @@
                <div class="header_component">
                     <div class="rectangle_bg header_component">
                          <div>
-                              <h1 id="header_h1">UI/UX designer and Webflow developer</h1>
-                              <p id="header_text">A UI/UX designer and creative Webflow developer — I collaborate with
+                              <h1 id="header_h1" data-aos="fade-right">UI/UX designer and Webflow developer</h1>
+                              <p id="header_text" data-aos="fade-right">A UI/UX designer and creative Webflow developer
+                                   — I collaborate with
                                    brands
                                    and agencies globally to design impactful, mission-focused websites that drive
                                    results and
                                    achieve business goals.</p>
-                              <div class="header_buttons">
+                              <div class="header_buttons" data-aos="fade-right">
                                    <a href="#"><img src="/pictures/linkedin.png" alt="linkedin"></a>
                                    <a href="#"><img src="/pictures/dribble.png" alt="dribble"></a>
                                    <a href="#"><img src="/pictures/w.png" alt="w"></a>
                               </div>
                          </div>
                          <div>
-                              <img id="header_image_wrap" src="/pictures/header_image-wrap.png" alt="header_image-wrap">
+                              <img id="header_image_wrap" data-aos="zoom-in" src="/pictures/header_image-wrap.png"
+                                   alt="header_image-wrap">
                          </div>
                     </div>
                </div>
           </section>
      </header>
+
      <main class="main global_padding">
           <section class="hero-section">
                <div class="work_column">
-                    <h1 id="work_h1">Work</h1>
-                    <button id="work_btn">Check all works</button>
+                    <h1 id="work_h1" data-aos="fade-right">Work</h1>
+                    <button id="work_btn" data-aos="fade-left" onclick="toggleWorkSection()">Check all works</button>
                </div>
-               <div class="work_images">
-                    <div class="work_img1">
-                         <img src="/pictures/work_1.png" alt="work_1" width="674" height="530">
+               <div class="works">
+                    <div class="work_images">
+                         <div class="work_img1">
+                              <img src="/pictures/work_1.png" alt="work_1" width="674" height="530">
+                              <div class="work_img_btns">
+                                   <button>Finsweet</button>
+                                   <button>Finsweet</button>
+                                   <button>Finsweet</button>
+                              </div>
+                              <p id="work_text">RecruitGo - graphic and website development</p>
+                         </div>
+                         <div class="work_img2">
+                              <img src="/pictures/work_2.png" alt="work_2" width="674" height="530">
+                              <div class="work_img_btns">
+                                   <button>Finsweet</button>
+                                   <button>Finsweet</button>
+                                   <button>Finsweet</button>
+                              </div>
+                              <p id="work_text">RecruitGo - graphic and website development</p>
+                         </div>
+                    </div>
+                    <div>
+                         <img id="work3_img" src="/pictures/work_3.png" alt="work_3">
                          <div class="work_img_btns">
                               <button>Finsweet</button>
                               <button>Finsweet</button>
@@ -72,42 +98,24 @@
                          </div>
                          <p id="work_text">RecruitGo - graphic and website development</p>
                     </div>
-                    <div class="work_img2">
-                         <img src="/pictures/work_2.png" alt="work_2" width="674" height="530">
-                         <div class="work_img_btns">
-                              <button>Finsweet</button>
-                              <button>Finsweet</button>
-                              <button>Finsweet</button>
-                         </div>
-                         <p id="work_text">RecruitGo - graphic and website development</p>
-                    </div>
-               </div>
-               <div>
-                    <img id="work3_img" src="/pictures/work_3.png" alt="work_3">
-                    <div class="work_img_btns">
-                         <button>Finsweet</button>
-                         <button>Finsweet</button>
-                         <button>Finsweet</button>
-                    </div>
-                    <p id="work_text">RecruitGo - graphic and website development</p>
                </div>
           </section>
      </main>
      <div class="section2">
-          <section class="section2_content">
+          <section class="section2_content" data-aos="fade-right">
                <div>
                     <h1 id="section2_h1">Expert Website and app for your Business</h1>
                     <p id="section2_text">Want better recognition, stand out from your competitors and sell more? I
                          got you covered with a user-centered and high converting Webflow site.</p>
                     <div class="section2_end">
-                         <button id="get_started">Get started</button>
+                         <a href="#" target="_blank"><button id="get_started">Get started</button></a>
                          <div class="section2_end_text">
                               <p>No obligations</p>
                               <p>Get estimation for FREE</p>
                          </div>
                     </div>
                </div>
-               <div class="section2_second">
+               <div class="section2_second" data-aos="fade-left">
                     <h2>Web app and website</h2>
                     <hr>
                     <h2>UX journey</h2>
@@ -121,9 +129,10 @@
           <div class="rectangle_bg">
                <section class="section3_content global_padding">
                     <div>
-                         <img src="/pictures/girl.jpg" alt="girl" width="500" height="750" style="border-radius: 16px;">
+                         <img data-aos="zoom-in-right" src="/pictures/girl.jpg" alt="girl" width="500" height="750"
+                              style="border-radius: 16px;">
                     </div>
-                    <div>
+                    <div data-aos="fade-left">
                          <h2 id="section3_h2">UI/UX designer and Webflow developer</h2>
                          <p id="section3_text">
                               I have the skills to develop the UX/UI (User Experience, User Interface)
@@ -136,30 +145,30 @@
      </div>
      <div class="faq_section global_padding">
           <a href="#">
-               <p>Do you do web design or web development?</p>
+               <p data-aos="fade-right">Do you do web design or web development?</p>
           </a>
           <hr>
           <a href="#">
-               <p>Do you do ui/ux?</p>
+               <p data-aos="fade-right">Do you do ui/ux?</p>
           </a>
           <hr>
           <a href="#">
-               <p>How long does a website take to build?</p>
+               <p data-aos="fade-right">How long does a website take to build?</p>
           </a>
           <hr>
           <a href="#">
-               <p>Designer or developer?</p>
+               <p data-aos="fade-right">Designer or developer?</p>
           </a>
           <hr>
           <a href="#">
-               <p>Will you work on the project in your account or mine?</p>
+               <p data-aos="fade-right">Will you work on the project in your account or mine?</p>
           </a>
      </div>
      <div class="section3">
           <div class="rectangle_bg global_padding">
-               <div class="footer">
+               <div class="preFooter">
                     <div class="footer-content">
-                         <div>
+                         <div data-aos="fade-right">
                               <h2 id="header_h1">Looking for a Webflow Developer?</h2>
                               <p id="header_text" style="padding: 24px 0;">Want better recognition, stand out from your
                                    competitors and sell more? I got you
@@ -174,7 +183,7 @@
                                    <a href="#" style="margin-right: 25px;"><img src="/pictures/w.png" alt="w"></a>
                               </div>
                          </div>
-                         <div class="footer2">
+                         <div class="footer2" data-aos="flip-left">
                               <p id="qr_title">Scan the QR code</p>
                               <div class="qr_rectangle">
                                    <img src="/pictures/Vector.svg" alt="qr code">
@@ -182,15 +191,58 @@
                               </div>
                          </div>
                     </div>
-                    <a href="#" class="scrollToTop">
-                         <img id="scrollToTopImg" src="/pictures/circle.svg" alt="to the top icon">
-                         <p id="scrollToTopArrow">↑</p>
-                    </a>
+                    <button id="scrollToTopArrow" data-aos="fade-up">↑</button>
                </div>
           </div>
      </div>
+     <footer class="footer">
+          <div class="footer-column">
+               <p class="footerHeading" data-aos="fade-up">Portfolio</p>
+          </div>
+          <div class="footer-column" data-aos="fade-up">
+               <p class="footerHeading">RESOURCES</p>
+               <a href="#" target="_blank" class="footerLink">Webflow portfolio</a>
+               <a href="#" target="_blank" class="footerLink">Webflow x Figma</a>
+               <a href="#" target="_blank" class="footerLink">Webflow documentation</a>
+               <a href="#" target="_blank" class="footerLink">Why Webflow?</a>
+               <a href="#" target="_blank" class="footerLink">Link Five</a>
+          </div>
+          <div class="footer-column" data-aos="fade-up">
+               <p class="footerHeading">Webflow Services</p>
+               <a href="#" target="_blank" class="footerLink">Webflow Web Design</a>
+               <a href="#" target="_blank" class="footerLink">Webflow development</a>
+               <a href="#" target="_blank" class="footerLink">Webflow expert</a>
+               <a href="#" target="_blank" class="footerLink">Webflow Developer</a>
+               <a href="#" target="_blank" class="footerLink">Webflow SEO</a>
+          </div>
+          <div class="footer-column" data-aos="fade-up">
+               <p class="footerHeading">EXPERTISES</p>
+               <a href="#" target="_blank" class="footerLink">Webflow expertise</a>
+               <a href="#" target="_blank" class="footerLink">Client-First Ambassador</a>
+               <a href="#" target="_blank" class="footerLink">Finsweet</a>
+               <a href="#" target="_blank" class="footerLink">Relume library</a>
+          </div>
+          <div class="footer-column" data-aos="fade-up">
+               <p class="footerHeading">Column Four</p>
+               <a href="#" target="_blank" class="footerLink">Fundraising</a>
+               <a href="#" target="_blank" class="footerLink">Link Seventeen</a>
+               <a href="#" target="_blank" class="footerLink">Link Eighteen</a>
+               <a href="#" target="_blank" class="footerLink">Link Nineteen</a>
+               <a href="#" target="_blank" class="footerLink">Link Twenty</a>
+          </div>
+          <div class="footer-column" data-aos="fade-up">
+               <p class="footerHeading">Column Five</p>
+               <a href="#" target="_blank" class="footerLink">Site Map</a>
+               <a href="#" target="_blank" class="footerLink">Contact</a>
+               <a href="#" target="_blank" class="footerLink">Blog</a>
+               <a href="#" target="_blank" class="footerLink">Link Twenty Four</a>
+               <a href="#" target="_blank" class="footerLink">Link Twenty Five</a>
+          </div>
+     </footer>
 
-
+     <!-- AOS -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- JS -->
      <script src="/main/js/script.js"></script>
 </body>
 
